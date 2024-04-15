@@ -1,0 +1,106 @@
+[
+  {
+    "ContainingType": "ServerAPI.Controllers.DashboardController",
+    "Method": "GetCombine",
+    "RelativePath": "api/Dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerAPI.Controllers.DashboardController",
+    "Method": "UpdateInvoiceCacheEntry",
+    "RelativePath": "api/Dashboard/invoice/{orderId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedData",
+        "Type": "ServerAPI.Models.InvoiceModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerAPI.Controllers.DashboardController",
+    "Method": "UpdateReturnCacheEntry",
+    "RelativePath": "api/Dashboard/returns/{orderId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedData",
+        "Type": "ServerAPI.Models.ReturnsModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerAPI.Controllers.DashboardController",
+    "Method": "UpdateSalesOrderCacheEntry",
+    "RelativePath": "api/Dashboard/salerorder/{orderId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedData",
+        "Type": "ServerAPI.Models.SalesOrderModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerAPI.Controllers.DashboardController",
+    "Method": "UpdateStockTransferCacheEntry",
+    "RelativePath": "api/Dashboard/stocktransfer/{orderId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedData",
+        "Type": "ServerAPI.Models.StockTransferModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerAPI.Controllers.DashboardController",
+    "Method": "GetTesting",
+    "RelativePath": "api/Dashboard/testing",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
