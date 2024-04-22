@@ -21,7 +21,8 @@ namespace ServerAPI.Hubs
         
         public async Task NotifySalesOrderCacheUpdated()
         {
-            if (_dataCache.TryGetValue("SalesOrderCache", out List<SalesOrderModel> updatedData))
+       //     if (_dataCache.TryGetValue("SalesOrderCache", out List<SalesOrderModel> updatedData))
+            if (_dataCache.TryGetValue("SalesOrderCache", out Dictionary<int, SalesOrderModel> updatedData))
             {
                 await _hubContext.Clients.All.SendAsync("SalesOrderCacheUpdated", updatedData);
             }
@@ -29,7 +30,8 @@ namespace ServerAPI.Hubs
 
         public async Task NotifyReturnsCacheUpdated()
         {
-            if (_dataCache.TryGetValue("ReturnsCache", out List<ReturnsModel> updatedData))
+            //          if (_dataCache.TryGetValue("ReturnsCache", out List<ReturnsModel> updatedData))
+            if (_dataCache.TryGetValue("SalesOrderCache", out Dictionary<int, ReturnsModel> updatedData))
             {
                 await _hubContext.Clients.All.SendAsync("ReturnsCacheUpdated", updatedData);
             }
@@ -37,24 +39,32 @@ namespace ServerAPI.Hubs
 
         public async Task NotifyInvoiceCacheupdated()
         {
-            if (_dataCache.TryGetValue("InvoiceCache", out List<InvoiceModel> updatedData))
+            //   if (_dataCache.TryGetValue("InvoiceCache", out List<InvoiceModel> updatedData))
+
+            if (_dataCache.TryGetValue("SalesOrderCache", out Dictionary<int, InvoiceModel> updatedData))
             {
                 await _hubContext.Clients.All.SendAsync("InvoiceCacheUpdated", updatedData);
             }
         }
+
         public async Task NotifyStockTransferCacheUpdated()
         {
-            if (_dataCache.TryGetValue("StockTransferCache", out List<StockTransferModel> updatedData))
+            //          if (_dataCache.TryGetValue("StockTransferCache", out List<StockTransferModel> updatedData))
+            if (_dataCache.TryGetValue("SalesOrderCache", out Dictionary<int, StockTransferModel> updatedData))
             {
                 await _hubContext.Clients.All.SendAsync("StockTransferCacheUpdated", updatedData);
             }
         }
+
         public async Task NotifyStockWithdrawalCacheUpdated()
         {
-            if (_dataCache.TryGetValue("StockWithdrawalCache", out List<StockWithdrawalModel> updatedData))
-            {
+   
+      //      if (_dataCache.TryGetValue("StockWithdrawalCache", out List<StockWithdrawalModel> updatedData))
+                if (_dataCache.TryGetValue("SalesOrderCache", out Dictionary<int, StockWithdrawalModel> updatedData))
+                {
                 await _hubContext.Clients.All.SendAsync("StockWithdrawalCacheUpdated", updatedData);
             }
         }
+
     }
 }

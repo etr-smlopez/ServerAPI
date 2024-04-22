@@ -81,3 +81,4 @@ C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Debug\net6.0\ServerAPI.pd
 C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Debug\net6.0\ServerAPI.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Debug\net6.0\ref\ServerAPI.dll
 C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Debug\net6.0\ServerAPI.sourcelink.json

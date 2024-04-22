@@ -19,7 +19,6 @@ namespace ServerAPI.SQLAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        
             modelBuilder.Entity<SalesOrderModel>().HasNoKey().ToView("DashboardSalesOrder");
             modelBuilder.Entity<ReturnsModel>().HasNoKey().ToView("DashboardReturns");
             modelBuilder.Entity<InvoiceModel>().HasNoKey().ToView("DashboardInvoice");

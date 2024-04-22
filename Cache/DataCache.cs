@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Caching.Memory;
 using ServerAPI.Models;
 using ServerAPI.SQLAccess;
-
+  
 namespace ServerAPI.Cache
 {
     public class DataCache
@@ -17,50 +17,48 @@ namespace ServerAPI.Cache
             _dbcontext.Database.EnsureCreated();
         }
 
-        public List<SalesOrderModel> GetSalesOrderCachedData()
+        public Dictionary<int, SalesOrderModel> GetSalesOrderCachedData()
         {
-            return GetOrCreateCache("SalesOrderCache", () => _dbcontext.SalesOrder.ToList());
+            return GetOrCreateCache("SalesOrderCache", () => _dbcontext.SalesOrder.ToDictionary(o => o.SalesOrderKey));
+        }
+        public Dictionary<int, ReturnsModel> GetReturnsCachedData()
+        {
+            return GetOrCreateCache("ReturnsCache", () => _dbcontext.Returns.ToDictionary(o => o.ReturnsKey));
         }
 
-        public List<ReturnsModel> GetReturnsCachedData()
+        public Dictionary<int, InvoiceModel> GetInvoiceCachedData()
         {
-            return GetOrCreateCache("ReturnsCache", () => _dbcontext.Returns.ToList());
+            return GetOrCreateCache("InvoiceCache", () => _dbcontext.Invoice.ToDictionary(o => o.InvoiceKey));
         }
 
-        public List<InvoiceModel> GetInvoiceCachedData()
+        public Dictionary<int, StockTransferModel> GetStockTransferCachedData()
         {
-            return GetOrCreateCache("InvoiceCache", () => _dbcontext.Invoice.ToList());
+            return GetOrCreateCache("StockTransferCache", () => _dbcontext.StockTransfer.ToDictionary(o => o.StockTransferKey));
         }
 
-        public List<StockTransferModel> GetStockTransferCachedData()
+        public Dictionary<int, StockWithdrawalModel> GetStockWithdrawalCachedData()
         {
-            return GetOrCreateCache("StockTransferCache", () => _dbcontext.StockTransfer.ToList());
+            return GetOrCreateCache("StockWithdrawalCache", () => _dbcontext.StockWithdrawal.ToDictionary(o => o.StockWithdrawalID));
         }
-
-         public List<StockWithdrawalModel> GetStockWithdrawalCachedData()
+ 
+        public void UpdateCache<T>(string cacheKey, int orderId, T updatedData, Dictionary<int, T> existingData) where T : class
         {
-            return GetOrCreateCache("StockWithdrawalCache", () => _dbcontext.StockWithdrawal.ToList());
-        }
-
-        public void UpdateCache<T>(string cacheKey, int orderId, T updatedData, List<T> existingData) where T : class
-        {
-            var existingOrder = existingData.FirstOrDefault(o => GetOrderId(o) == orderId);
-            if (existingOrder != null)
+            if (existingData.ContainsKey(orderId))
             {
-                UpdateExistingData(existingOrder, updatedData);
+                UpdateExistingData(existingData[orderId], updatedData);
             }
             else
             {
-                existingData.Add(updatedData);
+                existingData.Add(orderId, updatedData);
             }
-            
+
             _cache.Set(cacheKey, existingData, new MemoryCacheEntryOptions
             {
                 Priority = CacheItemPriority.NeverRemove
             });
         }
-
-        private List<T> GetOrCreateCache<T>(string cacheKey, Func<List<T>> dataGetter) where T : class
+       
+        private Dictionary<int, T> GetOrCreateCache<T>(string cacheKey, Func<Dictionary<int, T>> dataGetter) where T : class
         {
             return _cache.GetOrCreate(cacheKey, entry =>
             {
@@ -90,8 +88,7 @@ namespace ServerAPI.Cache
             else if (data is StockWithdrawalModel stockWithdrawal)
             {
                 return stockWithdrawal.StockWithdrawalID;
-            } 
-
+            }
             return -1;
         }
 
@@ -124,7 +121,7 @@ namespace ServerAPI.Cache
                 existingStockTransfer.TransferSlipNo = updatedStockTransfer.TransferSlipNo;
                 existingStockTransfer.TransferDate = updatedStockTransfer.TransferDate;
                 existingStockTransfer.CreatedBy = updatedStockTransfer.CreatedBy;
-            }  
+            }
             else if (existingData is StockWithdrawalModel existingStockWithdrawal && updatedData is StockWithdrawalModel updatedStockWithdrawal)
             {
                 existingStockWithdrawal.Status = updatedStockWithdrawal.Status;
@@ -135,4 +132,3 @@ namespace ServerAPI.Cache
         }
     }
 }
- 

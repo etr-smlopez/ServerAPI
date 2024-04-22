@@ -24,7 +24,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
         sqlServerOptionsAction: sqlOptions =>
         {
-            sqlOptions.CommandTimeout(60);  
+            sqlOptions.CommandTimeout(60);
         })
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors()
@@ -35,7 +35,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddSignalR(options =>
 {
     options.EnableDetailedErrors = true;
-    options.ClientTimeoutInterval = TimeSpan.FromSeconds(120); // Set the desired timeout value
+    options.ClientTimeoutInterval = TimeSpan.FromSeconds(120);  
     options.KeepAliveInterval = TimeSpan.FromSeconds(120);
 });
   

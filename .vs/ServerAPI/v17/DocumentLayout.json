@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|c:\\users\\administrator\\desktop\\serverapi\\serverapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|c:\\users\\administrator\\desktop\\serverapi\\serverapi\\cache\\datacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:cache\\datacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|c:\\users\\administrator\\desktop\\serverapi\\serverapi\\sqlaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\sqlaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:sqlaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\cache\\datacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:cache\\datacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\hubs\\datahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:hubs\\datahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849FEE62-B974-47B3-8CCD-26238038C585}|ServerAPI.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,59 +34,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-17T01:04:38.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAABwAAAAlAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T05:42:39.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T05:42:39.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\SQLAccess\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "SQLAccess\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\SQLAccess\\ApplicationDbContext.cs",
               "RelativeToolTip": "SQLAccess\\ApplicationDbContext.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA9wBEAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T09:52:03.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T09:52:03.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "Controllers\\DashboardController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAowDYAAAAoAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAgwE4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T09:43:13.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DataHub.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Hubs\\DataHub.cs",
               "RelativeDocumentMoniker": "Hubs\\DataHub.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Hubs\\DataHub.cs",
               "RelativeToolTip": "Hubs\\DataHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T09:41:33.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T09:41:33.252Z"
             },
             {
               "$type": "Document",
@@ -92,7 +106,7 @@
               "RelativeDocumentMoniker": "Cache\\DataCache.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\ServerAPI\\ServerAPI\\Cache\\DataCache.cs",
               "RelativeToolTip": "Cache\\DataCache.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwA4AAAAbAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAwFoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T09:44:53.512Z",
               "EditorCaption": ""

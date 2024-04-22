@@ -81,3 +81,4 @@ C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Release\net6.0\refint\Ser
 C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Release\net6.0\ServerAPI.pdb
 C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Release\net6.0\ServerAPI.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Release\net6.0\ref\ServerAPI.dll
+C:\Users\Administrator\Desktop\ServerAPI\ServerAPI\obj\Release\net6.0\ServerAPI.sourcelink.json
